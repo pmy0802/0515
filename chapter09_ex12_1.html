@@ -7,11 +7,12 @@
     <title>Document</title>
     <script>
         function volume(r,h){
-            return (r * r * Math.PI) * h;
+            return Math.round(r * r * Math.PI) * h;
         }
+        var r = parseInt(prompt("원의 반지름 입력:", "입력"));
+        var h = parseInt(prompt("원기둥의 높이 입력:", "입력"));
 
-        alert(volume(3,4));
-        
+        alert(volume(r,h) + "㎤");
     </script>
 </head>
 <body>
